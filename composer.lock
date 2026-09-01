@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "214b8415dd5c250758bd57b4d4e6b277",
+    "content-hash": "7ee42bb9a56c9a7a2280e3bb263485f8",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -7880,16 +7880,16 @@
         },
         {
             "name": "yungifez/april-ui",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yungifez/april-ui.git",
-                "reference": "74b1ac00f350049e61b0a16e868db585dcd6d490"
+                "reference": "0f3a135902727800b65f82c8c9ccfdaf5c35743e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yungifez/april-ui/zipball/74b1ac00f350049e61b0a16e868db585dcd6d490",
-                "reference": "74b1ac00f350049e61b0a16e868db585dcd6d490",
+                "url": "https://api.github.com/repos/yungifez/april-ui/zipball/0f3a135902727800b65f82c8c9ccfdaf5c35743e",
+                "reference": "0f3a135902727800b65f82c8c9ccfdaf5c35743e",
                 "shasum": ""
             },
             "require": {
@@ -7955,9 +7955,9 @@
             ],
             "support": {
                 "issues": "https://github.com/yungifez/april-ui/issues",
-                "source": "https://github.com/yungifez/april-ui/tree/v1.0.0"
+                "source": "https://github.com/yungifez/april-ui/tree/v1.1.0"
             },
-            "time": "2026-09-01T02:59:06+00:00"
+            "time": "2026-09-01T21:31:38+00:00"
         }
     ],
     "packages-dev": [
