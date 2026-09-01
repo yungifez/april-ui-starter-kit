@@ -14,8 +14,8 @@
         name="{{ $name }}"
         type="{{ $type }}"
         :value="$value ?? old($name)"
-        @if ($placeholder) placeholder="{{ $placeholder }}" @endif
-        @if ($autocomplete) autocomplete="{{ $autocomplete }}" @endif
+        :placeholder="$placeholder"
+        :autocomplete="$autocomplete"
         {{ $attributes }}
     />
     @error($name)
