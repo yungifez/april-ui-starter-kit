@@ -18,8 +18,6 @@ The installer creates the `.env` file, generates the application key, creates th
 composer setup
 ```
 
-Setup also adds the April UI MCP server to `.mcp.json`, alongside Laravel Boost when it is configured.
-
 Then start the local server:
 
 ```shell
