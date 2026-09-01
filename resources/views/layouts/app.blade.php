@@ -17,7 +17,7 @@
                             <april:sidebar-menu>
                                 <april:sidebar-menu-item>
                                     <april:sidebar-menu-button-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" wire:navigate>
-                                        <span class="text-xs font-bold">D</span>
+                                        <x-lucide-layout-grid class="size-4" />
                                         <span>Dashboard</span>
                                     </april:sidebar-menu-button-link>
                                 </april:sidebar-menu-item>
@@ -31,19 +31,19 @@
                             <april:sidebar-menu>
                                 <april:sidebar-menu-item>
                                     <april:sidebar-menu-button-link href="{{ route('profile.edit') }}" :active="request()->routeIs('profile.edit')" wire:navigate>
-                                        <span class="text-xs font-bold">P</span>
+                                        <x-lucide-circle-user-round class="size-4" />
                                         <span>Profile</span>
                                     </april:sidebar-menu-button-link>
                                 </april:sidebar-menu-item>
                                 <april:sidebar-menu-item>
                                     <april:sidebar-menu-button-link href="{{ route('security.edit') }}" :active="request()->routeIs('security.edit')" wire:navigate>
-                                        <span class="text-xs font-bold">S</span>
+                                        <x-lucide-lock-keyhole class="size-4" />
                                         <span>Security</span>
                                     </april:sidebar-menu-button-link>
                                 </april:sidebar-menu-item>
                                 <april:sidebar-menu-item>
                                     <april:sidebar-menu-button-link href="{{ route('appearance.edit') }}" :active="request()->routeIs('appearance.edit')" wire:navigate>
-                                        <span class="text-xs font-bold">A</span>
+                                        <x-lucide-sun class="size-4" />
                                         <span>Appearance</span>
                                     </april:sidebar-menu-button-link>
                                 </april:sidebar-menu-item>

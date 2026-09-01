@@ -44,6 +44,10 @@ npm run build
 
 The starter kit keeps behavior in Laravel routes, middleware, Fortify actions, Livewire components, and PHPUnit/Pest feature tests. April UI supplies the presentation layer without replacing Laravel's application conventions.
 
+## Attribution
+
+This project started from the structure and authentication flow of Laravel's official [Livewire starter kit](https://github.com/laravel/livewire-starter-kit). April UI integration, the application views, the Blade component layer, and the remaining starter-kit changes are maintained in this repository.
+
 ## License
 
 This starter kit is open-sourced under the MIT license.

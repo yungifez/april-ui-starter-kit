@@ -22,6 +22,10 @@ class DashboardTest extends TestCase
         $this->actingAs($user);
 
         $response = $this->get(route('dashboard'));
-        $response->assertOk();
+        $response->assertOk()
+            ->assertSee('pattern-', false)
+            ->assertDontSee('Recent activity')
+            ->assertDontSee('Projects')
+            ->assertDontSee('Maya Chen');
     }
 }

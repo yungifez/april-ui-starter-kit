@@ -8,6 +8,63 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
+/* April UI's site palette: moss surfaces, a warm clay accent, and forest dark mode. */
+:root {
+    --background: 105 20% 93%;
+    --foreground: 145 18% 13%;
+    --card: 95 14% 97%;
+    --card-foreground: 145 18% 13%;
+    --popover: 95 14% 98%;
+    --popover-foreground: 145 18% 13%;
+    --primary: 28 38% 74%;
+    --primary-foreground: 28 38% 16%;
+    --secondary: 100 15% 87%;
+    --secondary-foreground: 145 18% 13%;
+    --muted: 100 15% 87%;
+    --muted-foreground: 145 8% 36%;
+    --accent: 30 20% 86%;
+    --accent-foreground: 145 18% 13%;
+    --border: 100 10% 79%;
+    --input: 100 10% 79%;
+    --ring: 28 38% 74%;
+    --sidebar-background: 100 16% 89%;
+    --sidebar-foreground: 145 18% 13%;
+    --sidebar-primary: 28 38% 74%;
+    --sidebar-primary-foreground: 35 25% 12%;
+    --sidebar-accent: 100 15% 84%;
+    --sidebar-accent-foreground: 145 18% 13%;
+    --sidebar-border: 100 10% 79%;
+    --sidebar-ring: 28 38% 74%;
+}
+
+.dark {
+    --background: 145 20% 6%;
+    --foreground: 45 28% 92%;
+    --card: 145 15% 9%;
+    --card-foreground: 45 28% 92%;
+    --popover: 145 15% 9%;
+    --popover-foreground: 45 28% 92%;
+    --primary: 28 50% 22%;
+    --primary-foreground: 28 50% 64%;
+    --secondary: 145 12% 14%;
+    --secondary-foreground: 45 28% 92%;
+    --muted: 145 12% 14%;
+    --muted-foreground: 90 9% 64%;
+    --accent: 30 20% 15%;
+    --accent-foreground: 45 28% 92%;
+    --border: 145 10% 17%;
+    --input: 145 10% 17%;
+    --ring: 28 50% 22%;
+    --sidebar-background: 145 22% 4%;
+    --sidebar-foreground: 45 28% 92%;
+    --sidebar-primary: 28 50% 22%;
+    --sidebar-primary-foreground: 45 28% 92%;
+    --sidebar-accent: 145 12% 14%;
+    --sidebar-accent-foreground: 45 28% 92%;
+    --sidebar-border: 145 10% 15%;
+    --sidebar-ring: 28 50% 22%;
+}
+
 @layer base {
     body {
         @apply bg-background text-foreground;
