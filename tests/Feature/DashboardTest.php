@@ -28,4 +28,16 @@ class DashboardTest extends TestCase
             ->assertDontSee('Projects')
             ->assertDontSee('Maya Chen');
     }
+
+    public function test_the_sidebar_uses_the_persisted_cookie_state(): void
+    {
+        $user = User::factory()->create();
+
+        $response = $this->withUnencryptedCookies(['sidebar_state' => 'false'])
+            ->actingAs($user)
+            ->get(route('dashboard'));
+
+        $response->assertOk()
+            ->assertSee('x-data="sidebar(false)"', false);
+    }
 }

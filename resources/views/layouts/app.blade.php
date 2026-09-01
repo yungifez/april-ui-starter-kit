@@ -4,7 +4,11 @@
         @include('partials.head')
     </head>
     <body class="min-h-full bg-background text-foreground antialiased">
-        <april:sidebar-layout width="16rem" width-icon="3.5rem">
+        @php
+            $sidebarOpen = request()->cookie('sidebar_state', 'true') !== 'false';
+        @endphp
+
+        <april:sidebar-layout :default-open="$sidebarOpen" width="16rem" width-icon="3.5rem">
             <april:sidebar collapsible="icon" class="border-r">
                 <slot:header>
                     <x-app-logo :sidebar="true" class="px-2 py-1" />

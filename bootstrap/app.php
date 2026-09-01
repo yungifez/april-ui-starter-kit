@@ -12,7 +12,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // April UI stores the sidebar state as a plain cookie so its Alpine
+        // component can read and update it without a server round trip.
+        $middleware->encryptCookies(except: ['sidebar_state']);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(
